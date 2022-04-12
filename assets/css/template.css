@@ -1,0 +1,205 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+header {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+}
+header .header_links {
+    text-decoration: none;
+    margin: 15px;
+    color: #202124;
+}
+header .header_links:hover {
+    text-decoration: underline;
+    color: #202124;
+}
+header .button {    
+    font-size: 5px;            
+}
+.button img {
+    width: 30px;
+    height: 30px;
+}
+.image_profile img {    
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin: 15px;
+    object-fit: cover;
+}
+.seach {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.seach picture {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.seach .input_seach {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #dfe1e5;
+   border-radius: 24px;
+   width: 600px; 
+}
+.input_seach:hover {
+    box-shadow: 0px 0px 10px #d8d8d8;
+}
+.input_seach input {
+    width: 76%;
+    height: 35px;
+    border: 0;   
+    outline: 0; 
+}
+.input_seach i {
+    font-size: 20px;
+    padding: 10px;
+    color: #9aa0a6;
+}
+.input_seach a {
+    text-decoration: none;
+    color: #9aa0a6;
+}
+.button_seach {
+    margin-top: 30px;    
+}
+.button_seach input {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 0;
+    border-radius: 4px;
+    border: 1px solid #f8f9fa;
+    margin: 5px;
+}
+.button_seach input:hover {
+    border-color: #d8d8d8;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;           
+    justify-content: flex-end;
+    color: #70757a;             
+}
+footer .region {
+    background-color: #F2F2F2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-bottom: 1px solid #dadce0;
+}
+footer .footer_links {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+footer a {
+    text-decoration: none;
+    color: #70757a;
+    margin-right: 20px;
+    font-size: 13px;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #70757a;    
+}
+.left_links a,
+.right_links a {
+        display: inline-table;
+    }
+@media(min-width:10px) and (max-width:449px) {
+    picture img {
+        width: 300px;
+    }
+    .seach .input_seach {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        width: 290px; 
+     }
+     .button_seach input {
+        box-sizing: border-box;
+        font-size: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 8px;
+        padding-left: 8px;
+        color: #3c4043;
+        background-color: #f8f9fa;
+        border: 0;
+        border-radius: 4px;
+        border: 1px solid #f8f9fa;
+        margin: 5px;
+    }
+    footer .footer_links {
+        flex-direction: column;
+        align-items: center;                  
+    }
+    footer .left_links,
+    footer .right_links {     
+        padding: 2px;
+        text-align: center;         
+    }
+    .left_links a,
+    .right_links a {
+        display: inline-table;
+    }
+}
+@media(min-width:450px) and (max-width:600px) {
+    header .header_links {
+        font-size: 14px;
+    }
+    picture img {
+        width: 400px;
+    }
+    .seach .input_seach {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        width: 430px; 
+     }
+     .button_seach input {
+         font-size: 14px;
+     }
+     footer .footer_links {
+         flex-direction: column;
+         align-items: center;                  
+     }
+     footer .left_links,
+     footer .right_links {         
+        padding: 5px;
+        text-align: center;         
+     }
+     .left_links a,
+    .right_links a {
+        display: inline-table;
+    }
+}
